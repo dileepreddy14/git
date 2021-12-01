@@ -1,0 +1,15 @@
+pipeline
+{
+agent any
+stageS
+{
+stage('executing commands')
+{
+steps
+{
+sh 'touch abc.txt'
+sh 'echo $JAVA_HOME'
+}
+}
+}
+}
